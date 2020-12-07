@@ -15,6 +15,6 @@ module ChatSpace
       g.javascripts false
       g.helper false
       g.test_framework false
-    endthe framework and any gems in your application.
+    end
   end
 end
