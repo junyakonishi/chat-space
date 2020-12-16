@@ -142,6 +142,7 @@
   height: calc(100vh - 190px);
   width: calc(100vw - 300px);
   background-color: #fafafa;
+  overflow: scroll;
   &__message-list {
     // height: calc(100vh - 190px);
     margin-left: 40px;
