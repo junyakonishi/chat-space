@@ -2,32 +2,36 @@ $(function(){
   function buildHTML(message){
     if ( message.image ) {
       let html =
-        `<div class="MessageBox" data-message-id=${message.id}>
-          <div class="MessageInfo">
-            <div class="MessageInfo__userName">
-              ${message.user_name}
-            </div>
-            <div class="MessageInfo__date">
-              ${message.created_at}
+        `<div class="main-chat__message-info__message-list" data-message-id=${message.id}>
+          <div class="main-chat__message-info__message-list__message-box">
+            <div class="main-chat__message-info__message-list__message-box__info">
+              <div class="main-chat__message-info__message-list__message-box__info__name">
+                ${message.user_name}
+              </div>
+              <div class="main-chat__message-info__message-list__message-box__info__date">
+                ${message.created_at}
+              </div>
             </div>
           </div>
-          <div class="Message">
-            <p class="Message__content">
-              ${message.content}
-            </p>
-            <img class="Message__image" src="${message.image}">
-          </div>
+            <div class="main-chat__message-info__message-list__message-box__message">
+              <p class="Message__content">
+                ${message.content}
+              </p>
+              <img class="Message__image" src="${message.image}">
+            </div>
         </div>`
       return html;
     } else {
       let html =
-      `<div class="MessageBox" data-message-id=${message.id}>
-        <div class="MessageInfo">
-          <div class="MessageInfo__userName">
-            ${message.user_name}
-          </div>
-          <div class="MessageInfo__date">
-            ${message.created_at}
+      `<div class="main-chat__message-info__message-list" data-message-id=${message.id}>
+        <div class="main-chat__message-info__message-list__message-box">
+          <div class="main-chat__message-info__message-list__message-box__info">
+            <div class="main-chat__message-info__message-list__message-box__info__name">
+              ${message.user_name}
+            </div>
+            <div class="main-chat__message-info__message-list__message-box__info__date">
+              ${message.created_at}
+            </div>
           </div>
         </div>
         <div class="Message">
