@@ -140,16 +140,16 @@
 
 .main-chat__message-info {
   height: calc(100vh - 190px);
-  width: calc(100vw - 300px);
+  // width: calc(100vw - 300px);
   background-color: #fafafa;
   overflow: scroll;
   &__message-list {
     // height: calc(100vh - 190px);
     margin-left: 40px;
       &__message-box {
-        height: calc(35px + 12px + 16px + 14px);
-        display: flex;
-        flex-direction: column;
+        // height: calc(35px + 12px + 16px + 14px);
+        // display: flex;
+        // flex-direction: column;
         &__info {
           height: 16px;
           display: flex;
@@ -168,7 +168,7 @@
         }
         &__message {
           color: #434A54;
-          height: 14px;
+          // height: 14px;
           font-size: 14px;
           margin-top: 12px;
         }

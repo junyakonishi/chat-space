@@ -4,7 +4,7 @@ $(function(){
       let html =
         `<div class="main-chat__message-info__message-list" data-message-id=${message.id}>
           <div class="main-chat__message-info__message-list__message-box">
-            <div main-chat__message-info__message-list__message-box__info">
+            <div class="main-chat__message-info__message-list__message-box__info">
               <div class="main-chat__message-info__message-list__message-box__info__name">
                 ${message.user_name}
               </div>
@@ -66,7 +66,7 @@ $(function(){
     })
     .fail(function() {
       alert("メッセージ送信に失敗しました");
-      $('.Form__submit').prop("disabled", false);
+      $('.main-chat__message-form__group__submit__btn').prop("disabled", false);
     });
   });
   

@@ -13,12 +13,12 @@ $(function(){
               </div>
             </div>
           </div>
-            <div class="main-chat__message-info__message-list__message-box__message">
-              <p class="Message__content">
-                ${message.content}
-              </p>
-              <img class="Message__image" src="${message.image}">
-            </div>
+          <div class="main-chat__message-info__message-list__message-box__message">
+            <p class="Message__content">
+              ${message.content}
+            </p>
+            <img class="Message__image" src="${message.image}">
+          </div>
         </div>`
       return html;
     } else {
@@ -45,8 +45,7 @@ $(function(){
   }
 
   let reloadMessages = function() {
-    let last_message_id = $('.main-chat__message-info__message-list').data("message-id") || 0;
-    console.log(last_message_id)
+    let last_message_id = $('.main-chat__message-info__message-list:last').data("message-id") || 0;
     $.ajax({
       url: "api/messages",
       type: 'get',
